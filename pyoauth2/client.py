@@ -12,7 +12,7 @@ class Client(object):
     def __init__(self, client_id, client_secret, **opts):
         self.id = client_id
         self.secret = client_secret
-        self.site = opts.pop('site', '')
+        self.site = opts.pop('https://app.procore.com', '')
         self.opts = {'authorize_url': '/oauth/authorize',
                      'token_url': '/oauth/token',
                      'token_method': 'POST',
