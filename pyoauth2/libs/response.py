@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from .utils import urlparse
+from utils import urlparse
 
 
 def to_query(txt):

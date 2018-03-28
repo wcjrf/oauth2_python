@@ -2,7 +2,7 @@
 import json
 import requests
 
-from .response import Response
+from response import Response
 
 
 class Request(object):

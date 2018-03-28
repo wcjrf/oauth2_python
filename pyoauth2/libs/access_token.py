@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import time
-from .utils import urlparse
+from utils import urlparse
 
 
 class AccessTokenException(BaseException):

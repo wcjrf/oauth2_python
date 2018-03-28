@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from .utils import urlencode
+from utils import urlencode
 
 
 class Connection(object):
