@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-from utils import urlparse
+
+from pyoauth2.libs import utils
+from pyoauth2.libs.utils import urlparse
 
 
 def to_query(txt):

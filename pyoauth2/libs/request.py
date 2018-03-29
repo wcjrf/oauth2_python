@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 import json
+from pyoauth2.libs import response
 import requests
 
-from response import Response
+from pyoauth2.libs.response import Response
 
 
 class Request(object):

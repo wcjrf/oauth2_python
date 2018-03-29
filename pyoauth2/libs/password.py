@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from base import Base
+
+from pyoauth2.libs import base
+from pyoauth2.libs.base import Base
 
 
 class Password(Base):

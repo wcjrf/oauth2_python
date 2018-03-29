@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import time
-from utils import urlparse
+from pyoauth2 import libs
+from pyoauth2.libs import utils
+from pyoauth2.libs.utils import urlparse
 
 
 class AccessTokenException(BaseException):

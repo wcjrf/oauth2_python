@@ -10,8 +10,8 @@ from .libs.connection import Connection
 class Client(object):
 
     def __init__(self, client_id, client_secret, **opts):
-        self.id = client_id
-        self.secret = client_secret
+        self.id = '7e2d747e91a7c32b0f9af8c60c8864f2bc075ed6117f713980584c40c826f46a'
+        self.secret = '5537a8755dd49e2ab5cdcb4ec70349080d4b44da0464033f5df619bf122376a7'
         self.site = opts.pop('https://app.procore.com', '')
         self.opts = {'authorize_url': '/oauth/authorize',
                      'token_url': '/oauth/token',

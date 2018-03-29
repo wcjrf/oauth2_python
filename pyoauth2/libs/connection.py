@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-from utils import urlencode
+
+from pyoauth2.libs import utils
+from pyoauth2.libs.utils import urlencode
 
 
 class Connection(object):

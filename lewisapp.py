@@ -2,20 +2,20 @@ from pyoauth2 import Client
 
 KEY = ''
 SECRET = ''
-CALLBACK = ''
+CALLBACK='https://lewistest2.herokuapp.com/callback'
 
 client = Client(KEY, SECRET,
                 site='https://app.procore.com',
-                authorize_url='/oauth/authorize',
-                token_url='/oauth/token')
+                authorize_url='https://app.procore.com/oauth/authorize',
+                token_url='https://app.procore.com/oauth/token')
 
 print ('-' * 80)
-authorize_url = client.auth_code.authorize_url(redirect_uri=CALLBACK, scope='user,public_repo')
+authorize_url = client.auth_code.authorize_url(redirect_uri=CALLBACK)
 print ('Go to the following link in your browser:')
 print (authorize_url)
 print ('-' * 80)
 
-code = raw_input('Enter the verification code and hit ENTER when you\'re done:')
+code = input('Enter the verification code and hit ENTER when you\'re done:')
 code = code.strip()
 access_token = client.auth_code.get_token(code, redirect_uri=CALLBACK, parse='query')
 print ('token', access_token.headers)

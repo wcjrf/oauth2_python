@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4983e805-4c35-423d-af9b-57957ae9a011}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>lewisapp.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="examples\box.py" />
+    <Compile Include="examples\douban.py" />
+    <Compile Include="examples\douban_auth_password.py" />
+    <Compile Include="examples\douban_auth_token.py" />
+    <Compile Include="examples\github.py" />
+    <Compile Include="examples\google.py" />
+    <Compile Include="examples\instagram.py" />
+    <Compile Include="examples\qq.py" />
+    <Compile Include="examples\weibo.py" />
+    <Compile Include="examples\weibo_token.py" />
+    <Compile Include="lewisapp.py" />
+    <Compile Include="pyoauth2\client.py" />
+    <Compile Include="pyoauth2\config.py" />
+    <Compile Include="pyoauth2\libs\access_token.py" />
+    <Compile Include="pyoauth2\libs\auth_code.py" />
+    <Compile Include="pyoauth2\libs\base.py" />
+    <Compile Include="pyoauth2\libs\connection.py" />
+    <Compile Include="pyoauth2\libs\password.py" />
+    <Compile Include="pyoauth2\libs\request.py" />
+    <Compile Include="pyoauth2\libs\response.py" />
+    <Compile Include="pyoauth2\libs\utils.py" />
+    <Compile Include="pyoauth2\libs\__init__.py" />
+    <Compile Include="pyoauth2\__init__.py" />
+    <Compile Include="setup.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="examples" />
+    <Folder Include="pyoauth2" />
+    <Folder Include="pyoauth2\libs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
